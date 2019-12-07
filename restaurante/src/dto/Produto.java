@@ -1,16 +1,17 @@
 package dto;
 
 public class Produto {
-	public ETipoProduto TipoPedido;
-	public String Nome;
-	public int Quanitdade;
-	public double Preço; 
-	public String Descricao;
-	public ETipoProduto getTipoPedido() {
-		return TipoPedido;
+	private ETipoProduto TipoProduto;
+	private String Nome;
+	private String Descricao;
+	private int Quantidade;
+	private double Preco;
+	
+	public ETipoProduto getTipoProduto() {
+		return TipoProduto;
 	}
-	public void setTipoPedido(ETipoProduto tipoPedido) {
-		TipoPedido = tipoPedido;
+	public void setTipoProduto(ETipoProduto tipoProduto) {
+		TipoProduto = tipoProduto;
 	}
 	public String getNome() {
 		return Nome;
@@ -18,23 +19,22 @@ public class Produto {
 	public void setNome(String nome) {
 		Nome = nome;
 	}
-	public int getQuanitdade() {
-		return Quanitdade;
-	}
-	public void setQuanitdade(int quanitdade) {
-		Quanitdade = quanitdade;
-	}
-	public double getPreço() {
-		return Preço;
-	}
-	public void setPreço(double preço) {
-		Preço = preço;
-	}
 	public String getDescricao() {
 		return Descricao;
 	}
 	public void setDescricao(String descricao) {
 		Descricao = descricao;
 	}
-	
+	public int getQuantidade() {
+		return Quantidade;
+	}
+	public void setQuantidade(int quantidade) {
+		Quantidade = quantidade;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
 }
